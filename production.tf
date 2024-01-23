@@ -12,11 +12,10 @@ provider "aws" {
 module "documentDB" {
   source               = "./documentDB"
   environment          = local.environment
-  subnet_ids           = ["subnet-04613a554eba04b04", "subnet-06bdc8634d71a49ed"]
-  vpc_id               = "vpc-02c1deac11ba9ea9b"
+  subnet_ids           = ["subnet-065449805451caff0", "subnet-091e01762f5d9aff3"]
+  vpc_id               = "vpc-0f82249b93e7a254c"
   docdb_instance_class = "db.r4.large"
-  docdb_password       = "fast-food"
   vpc_security_group_ids = [
-    "sg-0bd1f3f5df705bd04"
+    "sg-08815d5adcf3e997d"
   ]
 }
