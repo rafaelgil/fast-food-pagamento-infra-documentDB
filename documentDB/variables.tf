@@ -11,7 +11,7 @@ variable "vpc_id" {
 }
 
 variable "name" {
-  default = "fast-food-document"
+  default = "fast-food-documentdb"
 }
 
 variable "docdb_instance_class" {
